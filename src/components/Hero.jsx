@@ -14,7 +14,7 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-4xl font-bold mb-2">Yonatan Awoke</h1>
-        <p className="text-yellow-400 text-xl font-semibold mb-4">Frontend Developer and Web Designer</p>
+        <p className="text-yellow-400 text-xl font-semibold mb-4">Frontend Developer</p>
         <a
           href="/resume.pdf"
           download
