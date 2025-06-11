@@ -16,10 +16,10 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/@yonatan123" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="text-2xl hover:text-blue-400 transition" />
           </a>
-          <a href="https://t.me/@yo_uno" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me/yo_uno" target="_blank" rel="noopener noreferrer">
             <FaTelegram className="text-2xl hover:text-blue-400 transition" />
           </a>
-          <a href="https://www.instagram.com/@y_o_u_n_o" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/yo_u_n_o" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="text-2xl hover:text-pink-400 transition" />
           </a>
         </div>
