@@ -2,7 +2,7 @@ import React from 'react';
 import weatherapp from '../assets/weatherapp.jpg';
 import Temp from '../assets/temp.png';
 import Portfloio from '../assets/portfolio.png';
-import Bajaja from '../assets/bajaja.png';
+import Bajaja from '../assets/Bajaja.png';
 import Expense from '../assets/Expense.png';
 import { motion } from 'framer-motion';
 
