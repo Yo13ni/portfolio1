@@ -4,7 +4,7 @@ import Temp from '../assets/temp.png';
 import Portfloio from '../assets/portfolio.png';
 import Bajaja from '../assets/Bajaja.png';
 import Expense from '../assets/Expense.png';
-import MezmurDebter from '../assets/mezmurdebter.png'; // Add this import
+import MezmurDebter from '../assets/MezmurDebter.png'; // Add this import
 import { motion } from 'framer-motion';
 
 const projects = [
