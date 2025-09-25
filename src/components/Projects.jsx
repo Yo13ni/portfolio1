@@ -45,8 +45,8 @@ const projects = [
     name: "Mezmurdebter", // Project name
     technologies: "flutter,dart", // Update with actual technologies used
     image: Mezmurdebter, // Make sure to import the image
-    github: "https://github.com/Yo13ni/mezmurdebter", // Add your GitHub repo URL
-    live: "https://mezmurdebter.vercel.app" // Add your live demo URL
+    github: "https://github.com/Yo13ni/mzmur-debter", // Add your GitHub repo URL
+    
   }
 ];
 
