@@ -4,6 +4,7 @@ import Temp from '../assets/temp.png';
 import Portfloio from '../assets/portfolio.png';
 import Bajaja from '../assets/Bajaja.png';
 import Expense from '../assets/Expense.png';
+import Mezmurdebter from '../assets/MezmurDebter.jpg'; // Import your new project image
 import { motion } from 'framer-motion';
 
 const projects = [
@@ -21,7 +22,7 @@ const projects = [
     technologies: "React JS, Tailwind CSS",
     image: Portfloio,
     github: "https://github.com/Yo13ni/portfolio",
-    live: "https://your-portfolio-live-url.com"
+    live: "https://your-portfolio-live-url.com" // Update this with your actual portfolio URL
   },
   {
     id: 3,
@@ -33,11 +34,19 @@ const projects = [
   },
   {
     id: 4,
-    name: "Daily Expemse UI Design",
+    name: "Daily Expense UI Design",
     technologies: "Figma UI Design",
     image: Expense,
     github: "", // no GitHub repo for UI design
     live: "https://www.figma.com/design/XLSGZtVdyyrdnYhTa8GsnU/Untitled?node-id=0-1&t=u9D36zi0FwhkBxUw-1" 
+  },
+  {
+    id: 5, // New ID
+    name: "Mezmurdebter", // Project name
+    technologies: "flutter,dart", // Update with actual technologies used
+    image: Mezmurdebter, // Make sure to import the image
+    github: "https://github.com/Yo13ni/mezmurdebter", // Add your GitHub repo URL
+    live: "https://mezmurdebter.vercel.app" // Add your live demo URL
   }
 ];
 
@@ -97,4 +106,3 @@ const Projects = () => {
 };
 
 export default Projects;
-in this page i wanna add my new project mezmurdebter
