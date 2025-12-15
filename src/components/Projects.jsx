@@ -4,6 +4,7 @@ import Temp from '../assets/temp.png';
 import Portfloio from '../assets/portfolio.png';
 import Bajaja from '../assets/Bajaja.png';
 import Expense from '../assets/Expense.png';
+import cat from '../assets/cat.jpg';
 import Mezmurdebter from '../assets/MezmurDebter.jpg';
 import { motion } from 'framer-motion';
 
