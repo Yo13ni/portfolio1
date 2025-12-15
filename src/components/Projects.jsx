@@ -4,7 +4,7 @@ import Temp from '../assets/temp.png';
 import Portfloio from '../assets/portfolio.png';
 import Bajaja from '../assets/Bajaja.png';
 import Expense from '../assets/Expense.png';
-import Mezmurdebter from '../assets/MezmurDebter.jpg'; // Import your new project image
+import Mezmurdebter from '../assets/MezmurDebter.jpg';
 import { motion } from 'framer-motion';
 
 const projects = [
@@ -40,12 +40,12 @@ const projects = [
     live: "https://www.figma.com/design/XLSGZtVdyyrdnYhTa8GsnU/Untitled?node-id=0-1&t=u9D36zi0FwhkBxUw-1" 
   },
   {
-    id: 5, // New ID
-    name: "Mezmurdebter", // Project name
-    technologies: "flutter,dart", // Update with actual technologies used
-    image: Mezmurdebter, // Make sure to import the image
-    github: "https://github.com/Yo13ni/mezmurdebter", // Add your GitHub repo URL
-    live: "https://mezmurdebter.vercel.app" // Add your live demo URL
+    id: 5,
+    name: "Mezmurdebter",
+    technologies: "Flutter, Dart",
+    image: Mezmurdebter,
+    github: "https://github.com/Yo13ni/mzmur-debter",
+    live: "" // Empty live URL to hide the button
   }
 ];
 
@@ -86,14 +86,17 @@ const Projects = () => {
                       Show on GitHub
                     </a>
                   )}
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-yellow-600 transition-colors"
-                  >
-                    {project.technologies.toLowerCase().includes("figma") ? "Open Figma" : "Open Live"}
-                  </a>
+                  {/* Only show Live button if project has a live URL */}
+                  {project.live && project.live.trim() !== "" && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-yellow-600 transition-colors"
+                    >
+                      {project.technologies.toLowerCase().includes("figma") ? "Open Figma" : "Open Live"}
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>

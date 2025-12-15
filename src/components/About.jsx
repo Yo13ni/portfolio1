@@ -32,8 +32,8 @@ const About = () => {
                 {/* Skill Bars with Labels */}
                 {[
                   { label: 'HTML & CSS', percent: '95%' },
-                  { label: 'React JS', percent: '90%' },
-                  { label: 'Node JS', percent: '85%' },
+                  { label: 'React JS', percent: '80%' },
+                  { label: 'Flutter', percent: '50%' },
                 ].map((skill, index) => (
                   <motion.div
                     className='flex items-center gap-4'
@@ -64,7 +64,7 @@ const About = () => {
                   {[
                     { number: '1+', label: 'Year Experience' },
                     { number: '10+', label: 'Projects Completed' },
-                    { number: '10+', label: 'Happy Clients' },
+                    
                   ].map((stat, index) => (
                     <div key={index}>
                       <h3 className='text-2xl font-bold text-yellow-500'>{stat.number}</h3>
