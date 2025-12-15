@@ -10,11 +10,10 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     id: 1,
-    name: "Temperature Converter",
-    technologies: "JavaScript",
-    image: Temp,
-    github: "https://github.com/Yo13ni/temperature-converter",
-    live: "https://temperature-converter-jaxt8ju41-yonatans-projects-7076f5d2.vercel.app"
+    name: "TOM CAT",
+    technologies: "FLUTTER ",
+    image: cat,
+    github: "https://github.com/Yo13ni/Tom-",
   },
   {
     id: 2,

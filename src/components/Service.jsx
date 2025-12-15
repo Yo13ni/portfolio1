@@ -15,8 +15,8 @@ const services = [
   },
   {
     id: 3,
-    title: "Backend Development",
-    description: "Developing robust server-side logic and databases.",
+    title: "Mobile App Development",
+    description: "developing cross-platform mobile applications using Flutter.",
   },
   {
     id: 4,

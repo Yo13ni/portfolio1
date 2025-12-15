@@ -14,9 +14,9 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-4xl font-bold mb-2">Yonatan Awoke</h1>
-        <p className="text-yellow-400 text-xl font-semibold mb-4">Frontend Developer</p>
+        <p className="text-yellow-400 text-xl font-semibold mb-4">Flutter Mobile Developer</p>
         <a
-          href="/resume.pdf"
+          href="/yonatan_awoke_flutter_developer_resume.pdf"
           download
           className="inline-flex items-center gap-2 bg-yellow-400 text-black border border-yellow-400 rounded-full px-4 py-1 hover:bg-transparent hover:text-yellow-400 transition"
         >
