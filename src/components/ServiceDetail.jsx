@@ -33,18 +33,11 @@ const serviceDetails = {
     `
   },
   3: {
-    title: "Backend Development",
+    title: "Mobile App develeopemt",
     content: `
-      Our backend development service focuses on building secure and scalable server-side logic. 
-      We use technologies like Node.js, Express, and MongoDB to power web applications. 
-      Our architecture handles data storage, authentication, and authorization. 
-      We write efficient and secure REST APIs that are easy to consume. 
-      Error handling and logging are integrated for maintainability. 
-      Data validation and sanitization help keep your app secure. 
-      We also set up database schemas optimized for performance. 
-      Deployment and CI/CD pipelines are part of the package. 
-      Our backend integrates smoothly with your frontend. 
-      The result is a reliable foundation for any modern app.
+      Our mobile app development service specializes in creating cross-platform applications using Flutter. 
+      We build high-performance apps that run smoothly on both iOS and Android devices. 
+      Our team focuses on delivering intuitive user experiences with beautiful UI designs.    
     `
   },
   4: {
