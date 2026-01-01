@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Service from './components/Service'
+import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -15,6 +16,7 @@ function HomePage() {
       <Hero />
       <About />
       <Service />
+      <Experience />
       <Projects />
       <Contact />
       <Footer />

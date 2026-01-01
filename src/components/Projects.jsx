@@ -1,7 +1,4 @@
 import React from 'react';
-import weatherapp from '../assets/weatherapp.jpg';
-import Temp from '../assets/temp.png';
-import Portfloio from '../assets/portfolio.png';
 import Bajaja from '../assets/Bajaja.png';
 import Expense from '../assets/Expense.png';
 import cat from '../assets/cat.jpg';
@@ -11,18 +8,18 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     id: 1,
-    name: "TOM CAT",
-    technologies: "FLUTTER ",
-    image: cat,
-    github: "https://github.com/Yo13ni/Tom-",
+    name: "Mezmurdebter",
+    technologies: "Flutter, Dart",
+    image: Mezmurdebter,
+    github: "https://github.com/Yo13ni/mzmur-debter",
+    live: "" // Empty live URL to hide the button
   },
   {
     id: 2,
-    name: "Portfolio Website",
-    technologies: "React JS, Tailwind CSS",
-    image: Portfloio,
-    github: "https://github.com/Yo13ni/portfolio",
-    live: "https://your-portfolio-live-url.com" // Update this with your actual portfolio URL
+    name: "TOM CAT",
+    technologies: "Flutter, Dart",
+    image: cat,
+    github: "https://github.com/Yo13ni/Tom-",
   },
   {
     id: 3,
@@ -39,63 +36,71 @@ const projects = [
     image: Expense,
     github: "", // no GitHub repo for UI design
     live: "https://www.figma.com/design/XLSGZtVdyyrdnYhTa8GsnU/Untitled?node-id=0-1&t=u9D36zi0FwhkBxUw-1" 
-  },
-  {
-    id: 5,
-    name: "Mezmurdebter",
-    technologies: "Flutter, Dart",
-    image: Mezmurdebter,
-    github: "https://github.com/Yo13ni/mzmur-debter",
-    live: "" // Empty live URL to hide the button
   }
 ];
 
 const Projects = () => {
   return (
-    <div className="bg-black text-white py-20" id="projects">
-      <div className="container mx-auto px-8 md:px-16 lg:px-24 overflow-x-hidden">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          Projec<span className='text-yellow-400'>ts</span>
-        </h2>
+    <div className="bg-gray-50 py-20" id="projects">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 overflow-x-hidden">
+        <motion.h2 
+          className="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900"
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Projec<span className='text-primary-600'>ts</span>
+        </motion.h2>
+        <motion.p
+          className='text-center text-gray-600 mb-16 max-w-2xl mx-auto'
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          A showcase of my recent work and projects
+        </motion.p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white text-black rounded-lg shadow-md overflow-hidden hover:shadow-yellow-400/40 transition-all duration-300 transform hover:scale-105"
+              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200"
             >
-              <img
-                src={project.image}
-                alt={project.name}
-                className="w-full h-48 object-cover"
-              />
+              <div className="overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                />
+              </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
-                <p className="text-gray-700 mb-4">{project.technologies}</p>
-                <div className="flex gap-4">
+                <h3 className="text-2xl font-bold mb-2 text-gray-900">{project.name}</h3>
+                <p className="text-gray-600 mb-6">{project.technologies}</p>
+                <div className="flex flex-wrap gap-3">
                   {project.github && project.github.trim() !== "" && (
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-black text-white px-4 py-2 rounded-full hover:bg-yellow-500 transition-colors"
+                      className="bg-gray-900 text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition-colors font-medium text-sm"
                     >
-                      Show on GitHub
+                      View on GitHub
                     </a>
                   )}
-                  {/* Only show Live button if project has a live URL */}
                   {project.live && project.live.trim() !== "" && (
                     <a
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-yellow-600 transition-colors"
+                      className="bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors font-medium text-sm"
                     >
-                      {project.technologies.toLowerCase().includes("figma") ? "Open Figma" : "Open Live"}
+                      {project.technologies.toLowerCase().includes("figma") ? "Open Figma" : "View Live"}
                     </a>
                   )}
                 </div>
